@@ -1,0 +1,20 @@
+{
+  "name": "codex-recall",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gurucyy/codex-recall.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @codex-recall/desktop build",
+    "typecheck": "pnpm --filter @codex-recall/desktop typecheck",
+    "tauri": "pnpm --filter @codex-recall/desktop tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "typescript": "^5.6.0"
+  }
+}

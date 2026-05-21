@@ -1,0 +1,19 @@
+pub mod backup;
+pub mod diagnostics;
+pub mod discovery;
+pub mod export;
+pub mod global_state_reader;
+pub mod jsonl_parser;
+pub mod models;
+pub mod normalizer;
+pub mod path_utils;
+pub mod redaction;
+pub mod repair;
+pub mod scan;
+pub mod search;
+pub mod session_index_reader;
+pub mod snapshot;
+pub mod sqlite_reader;
+pub mod utils;
+
+pub use models::*;
