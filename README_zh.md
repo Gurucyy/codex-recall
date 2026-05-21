@@ -108,6 +108,19 @@ cargo test --workspace
 pnpm tauri build
 ```
 
+在 macOS 上会产出 `.app` 应用包和 `.dmg` 安装包；在 Windows 上会产出
+NSIS `.exe` 和 MSI `.msi` 安装包。
+
+如果要通过 GitHub 生成 Release 资产，推送版本 tag 即可：
+
+```bash
+git tag -a v0.1.0 -m "Release 0.1.0"
+git push origin v0.1.0
+```
+
+`desktop-release` workflow 会构建 macOS 和 Windows 包，并把 `.dmg`、`.exe`
+和 `.msi` 上传到对应 tag 的 GitHub Release。
+
 ## 应用流程
 
 1. 打开原生桌面应用。

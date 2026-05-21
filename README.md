@@ -111,6 +111,19 @@ Build desktop packages:
 pnpm tauri build
 ```
 
+On macOS, this produces a `.app` bundle and `.dmg` installer. On Windows, this
+produces NSIS `.exe` and MSI `.msi` installers.
+
+GitHub desktop release assets can be built by pushing a version tag:
+
+```bash
+git tag -a v0.1.0 -m "Release 0.1.0"
+git push origin v0.1.0
+```
+
+The `desktop-release` workflow builds macOS and Windows packages and uploads
+`.dmg`, `.exe`, and `.msi` assets to the GitHub Release for the tag.
+
 ## App Workflow
 
 1. Open the native desktop app.
