@@ -19,8 +19,41 @@ sidebar, project view, or search, while the underlying files may still exist on 
 > original Codex data, transcripts are not uploaded, and Repair Center is experimental,
 > local, gated, backed up, and reversible where possible.
 
+## Product Preview
+
+Preview images mirror the current desktop UI and use synthetic demo data. They do not
+contain real Codex transcripts, local paths, project names, or private code.
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-overview.png" alt="Codex Recall scan setup and read-only desktop toolbar">
+      <br>
+      <sub><strong>Read-only desktop vault.</strong> Pick a Codex data directory, scan locally, and keep normal workflows away from original Codex files.</sub>
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-session-detail.png" alt="Session evidence, diagnostics, and transcript preview">
+      <br>
+      <sub><strong>Evidence diagnostics.</strong> Compare JSONL, SQLite, index, and global-state signals, then surface recoverability risks without writing back.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-workspaces.png" alt="Workspace-grouped session list with diagnostics">
+      <br>
+      <sub><strong>Workspace grouping.</strong> Browse recovered sessions by local workspace and spot local-only records, drift, and missing hints.</sub>
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-transcript.png" alt="Transcript viewer with synthetic user and assistant messages">
+      <br>
+      <sub><strong>Transcript viewer.</strong> Inspect recovered conversations locally with user, assistant, system log, and code-preview rendering.</sub>
+    </td>
+  </tr>
+</table>
+
 ## Table of Contents
 
+- [Product Preview](#product-preview)
 - [Why This Exists](#why-this-exists)
 - [Core Features](#core-features)
 - [Quick Start](#quick-start)

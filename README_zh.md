@@ -18,8 +18,41 @@
 > transcript。Repair Center 仍是实验功能，所有写入路径都必须本地执行、显式门控、
 > 先备份，并尽可能可回滚。
 
+## 产品预览
+
+预览图贴近当前桌面端真实 UI，但全部使用合成演示数据，不包含真实 Codex transcript、
+本地路径、项目名称或私有代码。
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-overview.png" alt="Codex Recall 扫描入口和只读桌面工具栏">
+      <br>
+      <sub><strong>只读桌面 vault。</strong> 选择 Codex 数据目录后本地扫描，默认流程不写回原始 Codex 文件。</sub>
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-session-detail.png" alt="会话证据、诊断和 transcript 预览">
+      <br>
+      <sub><strong>证据诊断。</strong> 对比 JSONL、SQLite、索引和 global state 信号，在不写回的前提下标记恢复风险。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-workspaces.png" alt="按工作区分组的会话列表和诊断">
+      <br>
+      <sub><strong>工作区分组。</strong> 按本地 workspace 浏览恢复到的会话，识别仅本地存在、漂移和缺失提示。</sub>
+    </td>
+    <td width="50%">
+      <img src="./docs/assets/readme/codex-recall-transcript.png" alt="使用合成用户和助手消息的 transcript 查看器">
+      <br>
+      <sub><strong>Transcript 查看器。</strong> 本地查看恢复到的用户、助手、系统日志和代码片段内容。</sub>
+    </td>
+  </tr>
+</table>
+
 ## 目录
 
+- [产品预览](#产品预览)
 - [为什么需要它](#为什么需要它)
 - [核心功能](#核心功能)
 - [快速开始](#快速开始)
